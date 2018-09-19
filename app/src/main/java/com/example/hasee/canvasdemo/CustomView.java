@@ -5,6 +5,7 @@ import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Scroller;
 
 /**
  * 滑动的第一种方式
@@ -12,12 +13,14 @@ import android.view.View;
 public class CustomView extends View {
     private int lastx;
     private int lasty;
+    private Scroller mscroller;
     public CustomView(Context context) {
         super(context);
     }
 
     public CustomView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
+        mscroller = new Scroller(context);
     }
 
     public CustomView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
@@ -52,11 +55,31 @@ public class CustomView extends View {
 //                layoutParams.topMargin = getTop()+offy;
 //                setLayoutParams(layoutParams);
 
-                
+
+                //scrollTO和scrollBy
+//                ((View)getParent()).scrollBy(-offx,offy);
+
 
 
                 break;
         }
         return true;
     }
+
+    @Override
+    public void computeScroll() {
+        super.computeScroll();
+        if (mscroller.computeScrollOffset()){
+            ((View)getParent()).scrollBy(mscroller.getCurrX(),mscroller.getCurrY());
+            invalidate();
+
+        }
+    }
+    public void smoothScrollTo(int destX,int destY){
+        int scrollX = getScrollX();
+        int delta = destX - scrollX;
+        mscroller.startScroll(scrollX,0,delta,0,2000);
+        invalidate();
+    }
+
 }

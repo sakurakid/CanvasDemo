@@ -3,10 +3,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.example.hasee.canvasdemo.CustomView
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:background="@color/colorAccent"/>
+    <com.example.hasee.canvasdemo.PathDemo
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 
 

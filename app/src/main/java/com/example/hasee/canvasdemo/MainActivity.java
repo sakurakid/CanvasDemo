@@ -9,6 +9,8 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
     private myView myView;
     private myView2 myView2;
+    private CustomView mcustomView;
+    private PathDemo pathDemo;
 
 
     @Override
@@ -16,7 +18,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         PieView view = new PieView(this);
         myView2 = new myView2(this);
-        setContentView(R.layout.activity_main);
+        pathDemo = new PathDemo(this);
+        setContentView(pathDemo);
+
 
         ArrayList<PieDate> datas = new ArrayList<>();
         PieDate pieData = new PieDate("sloop", 60);
