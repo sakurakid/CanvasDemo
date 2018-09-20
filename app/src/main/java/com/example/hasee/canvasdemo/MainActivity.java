@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
     private myView2 myView2;
     private CustomView mcustomView;
     private PathDemo pathDemo;
+    private RadarView radarView;
 
 
     @Override
@@ -19,7 +20,8 @@ public class MainActivity extends AppCompatActivity {
         PieView view = new PieView(this);
         myView2 = new myView2(this);
         pathDemo = new PathDemo(this);
-        setContentView(pathDemo);
+        radarView = new RadarView(this);
+        setContentView(radarView);
 
 
         ArrayList<PieDate> datas = new ArrayList<>();

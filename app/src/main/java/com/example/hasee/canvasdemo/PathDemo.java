@@ -78,6 +78,37 @@ public class PathDemo extends View {
 //
 //        canvas.drawPath(path,mPaint);
 
+        //第二类 2
+
+//        canvas.scale(1,-1);
+//
+//        Path path1 = new Path();
+//        Path src = new Path();
+//
+//        path1.addRect(-200,-200,200,200,Path.Direction.CW);
+//        src.addCircle(0,0,100,Path.Direction.CW);
+//
+//        path1.addPath(src,0,200);//将第二个路径加到第一个路径里面，然后向上移动（0，200）
+//
+//        mPaint.setColor(Color.RED);
+//        canvas.drawPath(path1,mPaint);
+
+
+//        //第三类 圆弧
+//        canvas.scale(1,-1);
+//
+//        Path path1 = new Path();
+//        path.lineTo(100,100);
+//
+//        RectF oval = new RectF(0,0,200,200);
+//
+//      //  path1.addArc(oval,0,270); //第一种
+//
+//        //path1.arcTo(oval,0,270);  //第二种
+//        canvas.drawPath(path1,mPaint);
+
+
+
 
 
     }
