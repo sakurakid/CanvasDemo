@@ -12,6 +12,9 @@ public class MainActivity extends AppCompatActivity {
     private CustomView mcustomView;
     private PathDemo pathDemo;
     private RadarView radarView;
+    private Bezier2 bezier2;
+    private Bezier3 bezier3;
+    private Bezier3Demo bezier3Demo;
 
 
     @Override
@@ -21,7 +24,10 @@ public class MainActivity extends AppCompatActivity {
         myView2 = new myView2(this);
         pathDemo = new PathDemo(this);
         radarView = new RadarView(this);
-        setContentView(radarView);
+        bezier2 = new Bezier2(this);
+        bezier3 = new Bezier3(this);
+        bezier3Demo = new Bezier3Demo(this);
+        setContentView(bezier3Demo);
 
 
         ArrayList<PieDate> datas = new ArrayList<>();
