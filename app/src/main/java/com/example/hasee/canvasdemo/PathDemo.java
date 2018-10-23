@@ -110,6 +110,5 @@ public class PathDemo extends View {
 
 
 
-
     }
 }

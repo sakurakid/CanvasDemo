@@ -3,9 +3,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.example.hasee.canvasdemo.PathDemo
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+   <com.example.hasee.canvasdemo.MotionEventViewGroup
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_gravity="center"
+       android:background="@color/colorAccent"
+       android:gravity="center"
+       >
+       <com.example.hasee.canvasdemo.MotionEventViewB
+           android:layout_width="300dp"
+           android:layout_height="300dp"
+           android:background="@color/colorPrimaryDark"
+           android:gravity="center">
+
+           <com.example.hasee.canvasdemo.MotionEventViewC
+               android:layout_width="150dp"
+               android:layout_height="150dp"
+               android:background="#c5c510"
+               android:layout_gravity="center"/>
+       </com.example.hasee.canvasdemo.MotionEventViewB>
+   </com.example.hasee.canvasdemo.MotionEventViewGroup>
 
 
 

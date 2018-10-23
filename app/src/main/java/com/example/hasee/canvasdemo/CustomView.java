@@ -59,6 +59,11 @@ public class CustomView extends View {
                 //scrollTO和scrollBy
 //                ((View)getParent()).scrollBy(-offx,offy);
 
+                smoothScrollTo(-lastx,-lasty);
+
+
+
+
 
 
                 break;

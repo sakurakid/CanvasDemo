@@ -51,5 +51,7 @@ public class myView extends View {
         mPaint.setColor(Color.BLACK);
         mPaint.setStyle(Paint.Style.FILL);
         mPaint.setStrokeWidth(10f);
+
+
     }
 }
